@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beginning of Blog</title>
+    
+    <meta name="author" content="Williams Liu">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">William's Home</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Beginning of Blog </h1>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    
+<h2 id="my-first-blog-on-github">My First Blog On GitHub</h2>
+
+<p>之前一直用印象笔记记录各方面的心得，只是自己看，所以比较零散。
+为了给自己点定期整理的动力，所以计划在GitHub上创建自己的Blog。</p>
+
+<p>下面是自己创建GitHub Blog过程，希望可以为有类似需求的Geek提供帮忙</p>
+
+<h2 id="github-pages">GitHub Pages</h2>
+
+<blockquote>
+  <p>依据官方的<a href="https://pages.github.com/">Github Pages</a>指导</p>
+</blockquote>
+
+<h3 id="usernamegithubiorepository">创建命名为<em>username.github.io</em>的Repository</h3>
+
+<h3 id="repositoryindexhtml">在Repository下创建<code>index.html</code></h3>
+<p>#####文件内容:
+	&lt;!DOCTYP html&gt;
+    &lt;html&gt;
+    	&lt;body&gt;
+    		&lt;h1&gt;Hello World&lt;/h1&gt;
+    	    &lt;p&gt;I’m hosted with GitHub Pages.&lt;/p&gt;
+    	&lt;/body&gt;
+    &lt;/html&gt;</p>
+
+<p>将<code>index.html</code>push到<strong>GitHub</strong>，访问<a href="http://username.github.io">http://username.github.io</a>即可看到效果</p>
+
+<h2 id="jekyllmarkdownblog">利用Jekyll创建本地MarkDown格式Blog</h2>
+<p>写HTML格式的Blog时，相当的时间用在了HTML语法上。<strong>MarkDown</strong>的语法相对<em>HTML</em>更简单，但是个人感觉更合适写作。</p>
+
+<p>准备使用<strong>GitHub</strong>推荐的<code>Jekyll</code>来搭建本地Blog服务器，<a href="http://jekyllcn.com/">Jekyll</a>是将纯文本转化为静态博客网站的Ruby Gem</p>
+
+<h3 id="os-xrubyrubyrubyjekyllrvmhttpsrvmioruby-version-management">本机环境是OS X，虽然系统自带Ruby，但是因为系统本身需要使用到Ruby，所以为了不影响系统不能Ruby来安装Jekyll。为了解决这个问题，所以先安装<a href="https://rvm.io/">RVM</a>（Ruby Version Management）</h3>
+<pre><code>$ \curl -sSL https://get.rvm.io | bash -s stable ###安装当前最新版本的Ruby并使用
+$ rvm list known
+$ rvm install 2.1.2          //安装Ruby2.1.2
+$ cd /username.github.io     //进入本地Blog路径
+$ rvm use 2.1.2              //使用安装的Ruby2.1.2
+$ rvm gemset create blogRubyGem //创建Jekyll的RVM GemSet
+$ rvm gemset use blogRubyGem //当前路径下使用myBlogRubyGem这个GemSet
+</code></pre>
+
+<blockquote>
+  <h3 id="jekyll">依据<a href="官方指导">官方指导</a>安装Jekyll</h3>
+</blockquote>
+
+<h2 id="jekyll-1">安装Jekyll的模板</h2>
+<p>上面完成了本机搭建Jekyll的环境，但是还没有符合Jekyll规则的网站架构。当然可以依据Jekyll官方的文档搭建一个，但是我这里使用了当前比较容易上手的主题Jekyll Bootstrap来搭建自己的Blog。
+因为过程比较简单，所以具体的流程请访问官网：<a href="http://jekyllbootstrap.com/">http://jekyllbootstrap.com/</a></p>
+
+<h2 id="os-xmarkdownmouhttpmouappcom">最后推荐一个OS X的免费MarkDown编辑器<a href="http://mouapp.com/">Mou</a></h2>
+<p><img src="http://mouapp.com/images/Mou_Screenshot_1@2x.png" alt="Mou" /></p>
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Williams Liu
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
