@@ -8,7 +8,6 @@ tags: [Jekyll]
 {% include JB/setup %}
 
 
-## My First Blog On GitHub
 
 之前一直用印象笔记记录各方面的心得，只是自己看，所以比较零散。
 为了给自己点定期整理的动力，所以计划在GitHub上创建自己的Blog。
