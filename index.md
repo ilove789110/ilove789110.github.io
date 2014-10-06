@@ -57,7 +57,7 @@ tags: [Jekyll]
 因为过程比较简单，所以具体的流程请访问官网：<http://jekyllbootstrap.com/>
 
 ##最后推荐一个OS X的免费MarkDown编辑器[Mou](http://mouapp.com/)
-![Mou](http://mouapp.com/images/Mou_Screenshot_1@2x.png)
+![Mou](http://25.io/mou/img/mou_512x512@2x.png)
     
    
 	

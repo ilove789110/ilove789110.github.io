@@ -8,4 +8,5 @@ http://ilove789110.github.io/rss.xml
 http://ilove789110.github.io/sitemap.txt
 http://ilove789110.github.io/tags.html
 
+http://ilove789110.github.io/uml/2014/10/06/uml-review
 http://ilove789110.github.io/core-samples/lessons/2011/12/29/jekyll-introduction

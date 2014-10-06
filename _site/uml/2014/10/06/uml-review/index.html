@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UML Review</title>
+    <meta name="description" content="">
+    <meta name="author" content="Williams Liu">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">William's Home</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>UML Review </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>06 October 2014</span>
+    </div>
+    <div class="content">
+      
+<h1 id="section">用例图：</h1>
+<ul>
+  <li>使用的场景：帮助开发团队以一种可视化的方式理解功能需求</li>
+  <li>包含的信息：角色（人形符号）和系统用例（椭圆）以及两者之间的关系（实线）
+    <ol>
+      <li>角色：与系统交互的其他实体</li>
+      <li>系统用例：系统功能</li>
+      <li>用例图边界：整个系统或者完成具有功能的一组用例</li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="section-1">类图：</h1>
+<ul>
+  <li>表示不同实体（人、事物和数据）之间的关系，即系统的静态结构</li>
+  <li>类可以是逻辑类（业务人员谈及的事物）或者实现类</li>
+  <li>两种常用的类关系描述方式：
+    <ol>
+      <li><em>继承</em>=空闲箭头指向被继承的类</li>
+      <li><em>组合</em>=开箭头指向被组合的类</li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="section-2">序列图：</h1>
+<ul>
+  <li>表示具体用例的详细流程，并且显示了流程中不同对象的调用关系</li>
+  <li>主要由以下两个维度组成
+    <ol>
+      <li>水平维度：显示消息被发送到的对象实例</li>
+      <li>垂直维度：以发生的时间顺序显示消息/调用的序列  </li>
+    </ol>
+  </li>
+</ul>
+
+<pre><code>水平方向上使用方框表示类或者实例（实例名：类名）
+垂直方向上  实线表示消息/调用的序列  虚线表示返回          
+</code></pre>
+
+<h1 id="section-3">状态图：</h1>
+<ul>
+  <li>表示某个类所处的不同状态以及状态转换信息，多用于类的状态多于三种</li>
+</ul>
+
+<pre><code>状态=圆角矩形
+实心圆=起始点
+空心圆=判断点
+内部包含实心圆的圆=终止点
+</code></pre>
+
+<h1 id="section-4">活动图</h1>
+<ul>
+  <li>表示某个活动时，两个或者更多个类对象之间的过程控制流</li>
+</ul>
+
+<pre><code>最大的特地是用泳道图表示类对象
+</code></pre>
+
+<h1 id="section-5">组件图</h1>
+<p>组件图提供系统的物理视图。它的用途是显示系统中的软件对其他软件组件（例如，库函数）的依赖关系</p>
+
+<h1 id="section-6">部署图</h1>
+<p>部署图表示该软件系统如何部署到硬件环境中。它的用途是显示该系统不同的组件将在何处物理地运行，以及它们将如何彼此通信。因为部署图是对物理运行情况进行建模，系统的生产人员就可以很好地利用这种图。</p>
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#uml-ref">
+    		uml <span>1</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#UML-ref">UML <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/core-samples/lessons/2011/12/29/jekyll-introduction" title="Jekyll Introduction">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Williams Liu
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

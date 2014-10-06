@@ -4,13 +4,85 @@
  <title>William's Home</title>
  <link href="http://ilove789110.github.io/" rel="self"/>
  <link href="http://ilove789110.github.io"/>
- <updated>2014-09-03T02:23:03+08:00</updated>
+ <updated>2014-10-06T15:15:17+08:00</updated>
  <id>http://ilove789110.github.io</id>
  <author>
    <name>Williams Liu</name>
    <email>geekLK476@163.com</email>
  </author>
 
+ 
+ <entry>
+   <title>UML Review</title>
+   <link href="http://ilove789110.github.io/uml/2014/10/06/uml-review"/>
+   <updated>2014-10-06T00:00:00+08:00</updated>
+   <id>http://ilove789110.github.io/uml/2014/10/06/uml-review</id>
+   <content type="html">
+&lt;h1 id=&quot;section&quot;&gt;用例图：&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;使用的场景：帮助开发团队以一种可视化的方式理解功能需求&lt;/li&gt;
+  &lt;li&gt;包含的信息：角色（人形符号）和系统用例（椭圆）以及两者之间的关系（实线）
+    &lt;ol&gt;
+      &lt;li&gt;角色：与系统交互的其他实体&lt;/li&gt;
+      &lt;li&gt;系统用例：系统功能&lt;/li&gt;
+      &lt;li&gt;用例图边界：整个系统或者完成具有功能的一组用例&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;类图：&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;表示不同实体（人、事物和数据）之间的关系，即系统的静态结构&lt;/li&gt;
+  &lt;li&gt;类可以是逻辑类（业务人员谈及的事物）或者实现类&lt;/li&gt;
+  &lt;li&gt;两种常用的类关系描述方式：
+    &lt;ol&gt;
+      &lt;li&gt;&lt;em&gt;继承&lt;/em&gt;=空闲箭头指向被继承的类&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;组合&lt;/em&gt;=开箭头指向被组合的类&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;序列图：&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;表示具体用例的详细流程，并且显示了流程中不同对象的调用关系&lt;/li&gt;
+  &lt;li&gt;主要由以下两个维度组成
+    &lt;ol&gt;
+      &lt;li&gt;水平维度：显示消息被发送到的对象实例&lt;/li&gt;
+      &lt;li&gt;垂直维度：以发生的时间顺序显示消息/调用的序列  &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;水平方向上使用方框表示类或者实例（实例名：类名）
+垂直方向上  实线表示消息/调用的序列  虚线表示返回          
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;状态图：&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;表示某个类所处的不同状态以及状态转换信息，多用于类的状态多于三种&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;状态=圆角矩形
+实心圆=起始点
+空心圆=判断点
+内部包含实心圆的圆=终止点
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;section-4&quot;&gt;活动图&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;表示某个活动时，两个或者更多个类对象之间的过程控制流&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;最大的特地是用泳道图表示类对象
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;section-5&quot;&gt;组件图&lt;/h1&gt;
+&lt;p&gt;组件图提供系统的物理视图。它的用途是显示系统中的软件对其他软件组件（例如，库函数）的依赖关系&lt;/p&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;部署图&lt;/h1&gt;
+&lt;p&gt;部署图表示该软件系统如何部署到硬件环境中。它的用途是显示该系统不同的组件将在何处物理地运行，以及它们将如何彼此通信。因为部署图是对物理运行情况进行建模，系统的生产人员就可以很好地利用这种图。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Jekyll Introduction</title>
